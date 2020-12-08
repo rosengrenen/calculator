@@ -22,12 +22,13 @@ public class Calculator {
     }
 
     private Double calculate(double left, String operator, double right) {
-        if (operator.equals("+")) {
-            return left + right;
-        } else if (operator.equals("-")) {
-            return left - right;
-        } else {
-            return -1.0;
+        switch (operator) {
+            case "+":
+                return left + right;
+            case "-":
+                return left - right;
+            default:
+                return -1.0;
         }
     }
 }
