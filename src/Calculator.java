@@ -26,7 +26,12 @@ public class Calculator {
             return left + right;
         } else if (operator.equals("-")) {
             return left - right;
-        } else {
+        } else if (operator.equals("*")) {
+            return left * right;
+        } else if (operator.equals("/")) {
+            return left / right;
+        }
+        else {
             return -1.0;
         }
     }
